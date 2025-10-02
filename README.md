@@ -1,59 +1,88 @@
-# MongoDB Fundamentals - Week 1
+# 📚 PLP Bookstore MongoDB Assignment
 
-## Setup Instructions
+// ============================================
+// 🚀 OBJECTIVE
+// ============================================
+// Learn MongoDB fundamentals:
+// - Setup and connection
+// - CRUD operations
+// - Advanced queries (projection, sorting, pagination)
+// - Aggregation pipelines
+// - Indexing and performance analysis
 
-Before you begin this assignment, please make sure you have the following installed:
+// ============================================
+// 🛠️ SETUP INSTRUCTIONS
+// ============================================
 
-1. **MongoDB Community Edition** - [Installation Guide](https://www.mongodb.com/docs/manual/administration/install-community/)
-2. **MongoDB Shell (mongosh)** - This is included with MongoDB Community Edition
-3. **Node.js** - [Download here](https://nodejs.org/)
+// ✅ REQUIREMENTS:
+// - Node.js installed
+// - MongoDB Community Edition installed and running locally
+// - MongoDB Compass (optional, for visual interface)
 
-### Node.js Package Setup
+// ✅ STEP 1: Clone your GitHub Classroom repository
+git clone <your-repo-url>
+cd <your-repo-folder>
 
-Once you have Node.js installed, run the following commands in your assignment directory:
-
-```bash
-# Initialize a package.json file
+// ✅ STEP 2: Initialize Node.js project
 npm init -y
 
-# Install the MongoDB Node.js driver
+// ✅ STEP 3: Install MongoDB Node.js driver
 npm install mongodb
-```
 
-## Assignment Overview
+// ✅ STEP 4: Run the data insertion script
+node insert_books.js
 
-This week focuses on MongoDB fundamentals including:
-- Creating and connecting to MongoDB databases
-- CRUD operations (Create, Read, Update, Delete)
-- MongoDB queries and filters
-- Aggregation pipelines
-- Indexing for performance
+// This script will:
+// - Connect to MongoDB
+// - Create database: plp_bookstore
+// - Create collection: books
+// - Insert 10+ sample book documents
 
-## Submission
+// ============================================
+// 📜 HOW TO RUN QUERIES
+// ============================================
 
-Complete all the exercises in this assignment and push your code to GitHub using the provided GitHub Classroom link.
+// OPTION 1: MongoDB Compass
+// - Open Compass and connect to: mongodb://localhost:27017
+// - Navigate to: plp_bookstore > books
+// - Use the "Filter" tab to run queries from queries.js
+// - Use the "Aggregation" tab for pipelines
 
-## Getting Started
+// OPTION 2: MongoDB Shell (mongosh)
+mongosh
+use plp_bookstore
+// Paste queries from queries.js directly into the shell
 
-1. Accept the GitHub Classroom assignment invitation
-2. Clone your personal repository that was created by GitHub Classroom
-3. Install MongoDB locally or set up a MongoDB Atlas account
-4. Run the provided `insert_books.js` script to populate your database
-5. Complete the tasks in the assignment document
+// ============================================
+// 📂 FILES INCLUDED
+// ============================================
+// insert_books.js   --> Node.js script to insert sample book data
+// queries.js        --> MongoDB queries for CRUD, advanced, aggregation, indexing
+// README.md         --> Setup and usage instructions
+// screenshot.png    --> Screenshot showing Compass with sample data
 
-## Files Included
+// ============================================
+// 📸 SCREENSHOT INSTRUCTIONS
+// ============================================
+// Open MongoDB Compass and show:
+// - The plp_bookstore database
+// - The books collection
+// - At least 3 visible documents
+// Save the image as: screenshot.png
 
-- `Week1-Assignment.md`: Detailed assignment instructions
-- `insert_books.js`: Script to populate your MongoDB database with sample book data
+// ============================================
+// ✅ SUBMISSION CHECKLIST
+// ============================================
+// [x] Accept GitHub Classroom invitation
+// [x] Clone your personal repository
+// [x] Add all required files:
+//     - insert_books.js
+//     - queries.js
+//     - README.md
+//     - screenshot.png
+// [x] Commit and push your changes:
+git add .
+git commit -m "Week 1 MongoDB project complete"
+git push
 
-## Requirements
-
-- Node.js (v18 or higher)
-- MongoDB (local installation or Atlas account)
-- MongoDB Shell (mongosh) or MongoDB Compass
-
-## Resources
-
-- [MongoDB Documentation](https://docs.mongodb.com/)
-- [MongoDB University](https://university.mongodb.com/)
-- [MongoDB Node.js Driver](https://mongodb.github.io/node-mongodb-native/) 
+// Your submission will be auto-graded and reviewed by your instructor.
